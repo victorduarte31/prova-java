@@ -1,7 +1,7 @@
 package br.com.confidencecambio.javabasico.controller;
 
 
-import br.com.confidencecambio.javabasico.service.IMCService;
+import br.com.confidencecambio.javabasico.service.IMCServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class IMCController {
 
-    private final IMCService imcService;
+    private final IMCServiceImpl imcService;
 
     @GetMapping
     ResponseEntity<Double> getCalculoImc(@RequestParam(value = "peso", required = true) String peso,

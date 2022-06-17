@@ -1,6 +1,6 @@
 package br.com.confidencecambio.javabasico.service;
 
-import br.com.confidencecambio.javabasico.service.impl.IMCServiceImpl;
+import br.com.confidencecambio.javabasico.service.impl.IMCService;
 import br.com.confidencecambio.javabasico.utils.VerificaNumerosUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -9,7 +9,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 @Service
 @RequiredArgsConstructor
-public class IMCService implements IMCServiceImpl {
+public class IMCServiceImpl implements IMCService {
 
 
     @Override

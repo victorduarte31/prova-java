@@ -1,6 +1,5 @@
 package br.com.confidencecambio.javabasico.service;
 
-import br.com.confidencecambio.javabasico.utils.VerificaNumerosUtils;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -9,16 +8,16 @@ import org.springframework.web.server.ResponseStatusException;
 
 import static org.junit.Assert.assertEquals;
 
-public class IMCServiceTest {
+public class IMCServiceImplTest {
 
-    private IMCService service;
+    private IMCServiceImpl service;
 
     @Rule
     public ExpectedException thrown = ExpectedException.none();
 
     @Before
     public void init(){
-        service = new IMCService();
+        service = new IMCServiceImpl();
     }
 
 
