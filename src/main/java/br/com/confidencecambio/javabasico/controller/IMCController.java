@@ -1,7 +1,7 @@
 package br.com.confidencecambio.javabasico.controller;
 
 
-import br.com.confidencecambio.javabasico.service.IMCServiceImpl;
+import br.com.confidencecambio.javabasico.service.impl.IMCServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

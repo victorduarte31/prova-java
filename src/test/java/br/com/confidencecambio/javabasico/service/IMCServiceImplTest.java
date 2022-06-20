@@ -1,5 +1,6 @@
 package br.com.confidencecambio.javabasico.service;
 
+import br.com.confidencecambio.javabasico.service.impl.IMCServiceImpl;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

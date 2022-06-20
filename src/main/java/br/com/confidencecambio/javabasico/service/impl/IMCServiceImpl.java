@@ -1,6 +1,6 @@
-package br.com.confidencecambio.javabasico.service;
+package br.com.confidencecambio.javabasico.service.impl;
 
-import br.com.confidencecambio.javabasico.service.impl.IMCService;
+import br.com.confidencecambio.javabasico.service.IMCService;
 import br.com.confidencecambio.javabasico.utils.VerificaNumerosUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

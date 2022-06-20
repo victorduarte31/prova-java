@@ -1,4 +1,4 @@
-package br.com.confidencecambio.javabasico.service.impl;
+package br.com.confidencecambio.javabasico.service;
 
 public interface IMCService {
 
