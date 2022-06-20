@@ -13,28 +13,35 @@ public abstract class ManipulaString {
 
         StringBuilder sb = new StringBuilder();
         String[] valor = s.trim().split(" ");
-        int i = 0;
+        int i;
         int qtoPalavras = valor.length;
 
-        for (i = 1; i < qtoPalavras; i++) {
-            sb.append(valor[i]).append(" ");
-        }
+        if (qtoPalavras > 1) {
+            for (i = 1; i < qtoPalavras; i++) {
+                sb.append(valor[i]).append(" ");
+            }
 
-        return sb.toString();
+            return sb.toString();
+        } else {
+            return valor[0];
+        }
     }
 
     public String nomeAbreviado (String s) {
         StringBuilder sb = new StringBuilder();
 
         String[] valor = s.trim().split(" ");
-        int i = 0;
+        int i;
         int qtoPalavras = valor.length;
 
-        for (i = 2; i < qtoPalavras; i++) {
-            sb.append(valor[i]).append(" ");
+        if (qtoPalavras > 1) {
+            for (i = 2; i < qtoPalavras; i++) {
+                sb.append(valor[i]).append(" ");
+            }
+            return valor[0] + " " + valor[1].charAt(0) + ". " + sb;
+        } else {
+            return valor[0];
         }
-
-        return valor[0] + " " + valor[1].charAt(0) + ". " + sb.toString();
     }
 
     public String toUpperCase(String s) {
